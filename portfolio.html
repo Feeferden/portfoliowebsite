@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>About Me</title>
+        <style>
+    body
+    {margin:30px;background-color:palevioletred;color:darkred;font-family:'Courier New',monospace;transition:background-color 0.5s,color 0.5s;}
+
+    .dark-mode
+    {background-color:black;color:white;}
+
+    .dark-mode .nav
+    {background-color:dimgray;color:white;}
+        
+    .dark-mode .footer
+    {background-color:dimgray;color:white;}
+        
+    .dark-mode .box
+    {background-color:dimgray;color:white;}
+
+    .nav
+    {display:flex;justify-content:center;gap:30px;background-color:pink;border:solid;padding:15px;margin-bottom:20px;}
+
+    .nav a
+    {text-decoration:none;color:darkred;font-weight:bold;}
+
+    .dark-mode .nav a
+    {color:white;}
+
+    button
+    {color:darkred;font-family:'Courier New', monospace;padding: 10px 20px;font-size:12px;border:solid;border-color:darkred;background-color:pink;}
+
+    button:hover
+    {background-color:white;}
+
+    .dark-mode button
+    {background-color:dimgray;color:white;border:solid;border-color:white;}
+
+    .dark-mode button:hover
+    {background-color:white;color:black;}
+
+    .content
+    {display:flex;justify-content:center;gap:30px;margin: 0 auto;max-width:1000px;}
+
+    .column
+    {display:flex;flex-direction:column;gap:20px;flex:1;}
+
+    .box
+    {background-color:pink;border:solid;padding:20px;margin: 0 auto; max-width: 900px;}
+
+    .footer
+    {margin-top:40px;text-align:right;padding:10px;background-color:pink;border:solid;}
+
+    img
+    {max-width:100%;height:auto;display:block;}
+
+    .img-grid
+    {display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+    
+    .project
+    {width:45%;box-sizing:border-box;transition:transform 0.3s;text-align:center;}
+
+    .project img
+    {width:100%;height:auto;display: block;border-radius: 8px;}
+
+    .project h3
+    {margin-top:10px;font-size:1.1;}
+
+    .project p
+    {font-size:0.95;color:inherit;}
+
+    .project:hover
+    {transform:scale(1.1);}
+
+
+    </style>
+    <script>
+    function toggledarkmode()
+    {document.body.classList.toggle("dark-mode");}
+        
+</script>
+</head>
+<body>
+
+<div>
+    <button onclick="toggledarkmode()">Toggle Dark/Light Mode</button>
+</div>
+
+<ul class="nav">
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="aboutme.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="box">
+    <h1>Art Portfolio</h1>    
+    <p>This page displays a few pieces of artwork that I am proud of!</p>
+
+<h2>Artwork With Backgrounds:</h2>
+<div class="img-grid">
+  <div class="project">
+    <h3>Art Telephone Piece</h3>
+    <img src="images/image5.png" alt="Artwork created for a friend's art challenge.">
+    <p>Artwork created for a friend's art challenge.</p>
+  </div>
+
+  <div class="project">
+    <h3>Side Order Commission</h3>
+    <img src="images/image6.png" alt="Artwork created as a commission of a friend's character.">
+    <p>Artwork created as a commission of a friend's character.</p>
+  </div>
+
+  <div class="project">
+    <h3>What Lurks Below</h3>
+    <img src="images/image7.png" alt="Artwork made as a fake promotional poster for a personal project.">
+    <p>Artwork made as a fake promotional poster for a personal project.</p>
+  </div>
+
+  <div class="project">
+    <h3>Splatoon Piece Collaboration</h3>
+    <img src="images/image8.png" alt="Artwork made for a matching collaboration with a friend.">
+    <p>Artwork made for a matching collaboration with a friend.</p>
+  </div>
+</div>
+
+
+<h2>Artwork Without Backgrounds:</h2>
+<div class="img-grid">
+  <div class="project">
+    <h3>Inspekta Fanart</h3>
+    <img src="images/image1.png" alt="Artwork created as fanart for a game named Great God Grove.">
+    <p>Artwork created as fanart for a game named Great God Grove.</p>
+  </div>
+
+  <div class="project">
+    <h3>Art Trade Piece</h3>
+    <img src="images/image2.png" alt="Artwork created for an art trade of a friend's character.">
+    <p>Artwork created for an art trade of a friend's character.</p>
+  </div>
+
+  <div class="project">
+    <h3>Creature Design</h3>
+    <img src="images/image3.png" alt="Artwork made as a possible creature design for a personal project.">
+    <p>Artwork made as a possible creature design for a personal project.</p>
+  </div>
+
+  <div class="project">
+    <h3>Secret Santa Piece</h3>
+    <img src="images/image4.png" alt="Artwork made as a secret santa gift for a friend.">
+    <p>Artwork made as a secret santa gift for a friend.</p>
+  </div>
+</div>
